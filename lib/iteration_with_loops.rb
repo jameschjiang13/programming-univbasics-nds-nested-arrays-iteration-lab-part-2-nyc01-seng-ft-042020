@@ -4,13 +4,13 @@ def find_min_in_nested_arrays(src)
   counter = 0
   min=[]
   while counter < src.count do
-    min_daily = src[count][0]
-    sub_count = 0
-    while sub_count < src[count].count do
-      if src[count][sub_count] < min_daily
-        min_daily = src[count][sub_count]
+    min_daily = src[counter][0]
+    sub_counter = 0
+    while sub_count < src[counter].count do
+      if src[counter][sub_counter] < min_daily
+        min_daily = src[counter][sub_counter]
       end
-      sub_count += 1
+      sub_counter += 1
     end
     counter += 1
     min << min_daily
