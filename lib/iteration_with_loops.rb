@@ -10,7 +10,9 @@ def find_min_in_nested_arrays(src)
       if src[count][sub_count] < min_daily
         min_daily = src[count][sub_count]
       end
+      sub_count += 1
     end
+    counter += 1
     min << min_daily
   end
   min
